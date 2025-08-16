@@ -16,7 +16,7 @@ function AddTransactionForm({postTransaction}) {
   return (
     <div className="ui segment">
       <form className="ui form" onSubmit={(e)=>{submitForm(e)}}>
-        <div className="inline fields">
+        <div className="inline fields" data-testid="add-form">
           <input type="date" name="date" />
           <input type="text" name="description" placeholder="Description" />
           <input type="text" name="category" placeholder="Category" />
