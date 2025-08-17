@@ -1,7 +1,9 @@
 import React from 'react';
-import { render, fireEvent, waitFor } from '@testing-library/react';
+import { render, fireEvent, waitFor, screen } from '@testing-library/react';
 import App from '../../components/App';
 import '@testing-library/jest-dom';
+import userEvent from '@testing-library/user-event';
+import { expect } from 'vitest';
 
 describe('Our App will', () => {
     test('add a transaction', async () => {
